@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LangLopendeTaak</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- LEAFLET -->
+  <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+  <link rel="stylesheet" href="css/mapStyle.css">
+  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+  <script defer src="js/mapScript.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example">
+  <header class="LangLopendeTaak">
+    <nav class="navbar navbar-expand-md bg-light">
+      <main class="container-fluid">
+        <a class="navbar-brand" href="Home.html">
+          <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="200" height="200">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <main class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Clubs Antwerpen">Clubs Antwerpen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Materiaal om te starten">Materiaal om te starten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NBA geschiedenis">NBA geschiedenis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NBA Spelers">NBA Spelers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Antwerpen Pleintjes">Antwerpen Pleintjes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Youtube Links">Youtube Links</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
+                <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
+                <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
+          </form>
+        </main>
+      </main>
+    </nav>
+  </header>
+
+
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section id="shopintro" class="row">
+          <article class="col-12 mb-3">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3">Waarom is de kwaliteit van het materiaal in basketbal zo belangrijk?</h2>
+            <p>Prestaties: Hoogwaardig materiaal verbetert de prestaties van de bal, zoals een consistente stuitering en een betere grip, 
+                wat essentieel is voor nauwkeurig dribbelen en schieten.</p>
+            <p> Grip: De grip van een basketbal is cruciaal voor de controle die spelers hebben over de bal. Kwalitatieve materialen dragen bij 
+                aan een goede grip, wat essentieel is voor het voorkomen van fouten en het behouden van de balcontrole.</p>
+            <p>Veiligheid: Hoogwaardig materiaal kan bijdragen aan de veiligheid van spelers.
+                 Minder kans op defecten zoals scheuren of barsten vermindert het risico op blessures tijdens het spelen. </p>
+          </article>
+
+
+
+
+        <hr>
+
+
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3">Basketbal </h2>
+            <p class="h6 small">Molten</p>
+            <a href="      " rel="noopener">
+              <figure>
+                <img src="Afbeeldingen/basketbal_material_1.webp" class="img-fluid" alt="Foto basketbal_material_1" title="Foto basketbal_material" width="170" height="180">
+              </figure>
+            </a>
+          </article>
+
+
+
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3">Officiel Basketbalschoenen</h2>
+            <p class="h6 small">Nike Lebron</p>
+            <a href=" " rel="noopener">
+              <figure><img src="Afbeeldingen/Materiaal_2.jpg" class="img-fluid" alt="Materiaal_2" title="Materiaal_2" width="170" height="180" >
+              </figure>
+            </a>
+          </article>
+
+
+
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3">Basketbalkleding</h2>
+            <p class="h6 small">Merk is belangrijk</p>
+            <a href=" " rel="noopener">
+              <figure><img src="Afbeeldingen/Materiaal_3.jpg" class="img-fluid" alt="foto van Starbucks koffiebonen" title="Starbucks koffiebonen" width="170" height="180">
+              </figure>
+            </a>
+          </article>
+
+
+
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3">koffiemolen 1</h2>
+            <p class="h6 small">grotere capaciteit</p>
+            <a href="#" rel="noopener">
+              <figure><img src="./images/pexels-4-juan-pablo-serrano-arenas.jpg" class="img-fluid" alt="foto van koffiemolen 1" title="koffiemolen 1">
+                <figcaption class="h6 small mt-2">© Julius Shulman</figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3">koffiemolen 2</h2>
+            <p class="h6 small">maal ze snel fijn</p>
+            <a href="#" rel="noopener">
+              <figure><img src="./images/pexels-5-wouter-de-jong.jpg" class="img-fluid" alt="foto van koffiemolen 2" title="koffiemolen 2">
+                <figcaption class="h6 small mt-2">© Juan Arenas</figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3">koffiemolen 3</h2>
+            <p class="h6 small">the old fashion way</p>
+            <a href="#" rel="noopener">
+              <figure><img src="./images/pexels-6-tom-swinnen.jpg" class="img-fluid" alt="foto van koffiemolen 3" title="koffiemolen 3">
+                <figcaption class="h6 small mt-2">© Tom Swinnen</figcaption>
+              </figure>
+            </a>
+          </article>
+            </section>
+
+
+        <hr>
+      </main>
+
+
+
+      <aside class="col-md-3 border-start ps-5">
+        <h2 class="text-uppercase fs-4 fw-bolder pt-3">Herkende winkels</h2>
+        <h4><p>Bouncewear<br></h4>
+          Website <a href="https://bouncewear.com/">https://bouncewear.com/</a><br>
+          Telefoon +32 3 33 18 085</p>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/bouncewear" target="_blank">
+              <i class="bi bi-youtube koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/bouncewear/" target="_blank">
+              <i class="bi bi-instagram koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/bouncewearbelgium/?brand_redir=398964010121747" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+        <h4>Sportshop<br></h4><p>
+          Website <a href="https://www.sportshop.com/be_nl/basketbal">https://www.sportshop.com/be_nl/basketbal</a><br>
+          Telefoon +32 484 71 85 01</p>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/sportshop.com_nl/" target="_blank">
+              <i class="bi bi-instagram koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/SportshopNederland" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+        <h4>Decathlon Antwerpen<br></h4><p>
+          Website <a href="https://www.decathlon.be/nl/">https://www.decathlon.be/nl/</a><br>
+          Telefoon +32 3 544 31 00</p>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/decathlonbe/" target="_blank">
+              <i class="bi bi-instagram koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/decathlonbelgium" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      
+      
+
+    </div>
+  </div>
+
+
+<footer class="container-fluid text-center h6 small p-4">© 2023 Daniel_LLT</footer>
+</body>
+</html>
