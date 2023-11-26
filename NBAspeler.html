@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LangLopendeTaak</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- LEAFLET -->
+  <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+  <link rel="stylesheet" href="css/mapStyle.css">
+  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+  <script defer src="js/mapScript.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example">
+  <header class="LangLopendeTaak">
+    <nav class="navbar navbar-expand-md bg-light">
+      <main class="container-fluid">
+        <a class="navbar-brand" href="Home.html">
+            <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <main class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Clubs Antwerpen">Clubs Antwerpen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Materiaal om te starten">Materiaal om te starten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NBA geschiedenis">NBA geschiedenis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NBA Spelers">NBA Spelers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Antwerpen Pleintjes">Antwerpen Pleintjes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Youtube Links">Youtube Links</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
+                <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
+                <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
+          </form>
+        </main>
+      </main>
+    </nav>
+  </header>
+
+  <h1><p><u>Top 10 beste NBA-spelers</u></p></h1>
+  <table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Speller</th>
+            <th scope="col">Geschiedenis</th>
+            <th scope="col">Eerste Team</th>
+            <th scope="col">Laatste Team</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Michael Jordan<img src="Afbeeldingen/Michael_Jordan_LLT.webp" class="rounded float-start" alt="Michael Jordan" width="150" height="180"></th> 
+            <td>Chicago Bulls (1984-1993, 1995-1998), Washington Wizards (2001-2003)</td>  
+            <td>Chicago Bulls<img src="Afbeeldingen/chicago_bulls_llt.png" class="rounded float-start" alt="chicago_bulls_llt" width="150" height="180"></td>
+            <td>Washington Wizards<img src="Afbeeldingen/Washington_Wizards_logo.svg.png" class="rounded float-start" alt="Washington_Wizards_logo" width="150" height="180"></td> 
+ 
+        </tr>        
+    </tbody>
+    <tbody>
+        <tr>
+            <th scope="row">LeBron James<img src="Afbeeldingen/LeBron_James_LLT.jpg" class="rounded float-start" alt="Afbeeldingen/Cobras_logo_123.jpg" width="150" height="170">
+            </th>
+            <td>Cleveland Cavaliers (2003-2010), Miami Heat (2010-2014), Cleveland Cavaliers (2014-2018), Los Angeles Lakers (2018-heden)</td>
+            <td>Cleveland Cavaliers<img src="Afbeeldingen/Cleveland_Cavaliers_logo.svg.png" class="rounded float-start" alt="Cleveland Cavaliers" width="150" height="180"></td>
+            <td>Los Angeles Lakers<img src="Afbeeldingen/Lakers_LLT.jpg" class="rounded float-start" alt="Lakers_LLT" width="150" height="180"></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th scope="row">Kareem Abdul-Jabbar<img src="Afbeeldingen/Kareem Abdul-Jabbar_LLT.jpg" class="rounded float-start" alt="Abdul-Jabbar" width="170" height="180"></th>
+            <td>Milwaukee Bucks (1969-1975), Los Angeles Lakers (1975-1989)</td>
+            <td>Milwaukee Bucks<img src="Afbeeldingen/Milwaukee_Bucks_logo_LLT.png" class="rounded float-start" alt="Logo Milwaukee Bucks" width="170" height="180"></td>
+            <td>Angeles Lakers<img src="Afbeeldingen/Lakers_LLT.jpg" class="rounded float-start" alt="Lakers_LLT" width="150" height="180"></td>       
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th scope="row">Magic Johnson <img src="Afbeeldingen/Magic Johnson_LLT.jpg" class="rounded float-start" alt="Magic Johnson" width="170" height="180"></th>
+            <td>Los Angeles Lakers (1979-1991, 1996)</td>
+            <td>Angeles Lakers<img src="Afbeeldingen/Lakers_LLT.jpg" class="rounded float-start" alt="Lakers_LLT" width="150" height="180"></td>       
+            <td>Angeles Lakers<img src="Afbeeldingen/Lakers_LLT.jpg" class="rounded float-start" alt="Lakers_LLT" width="150" height="180"></td>       
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th scope="row">Bill Russell<img src="Afbeeldingen/Bill Russell_LLT.webp" class="rounded float-start" alt="Bill Russell" width="170" height="180"></th>
+            <td>Boston Celtics (1956-1969)</td>
+            <td>Boston Celtics<img src="Afbeeldingen/Boston_LLT.png" class="rounded float-start" alt="Boston Celtics" width="150" height="180"></td>
+            <td>Boston Celtics<img src="Afbeeldingen/Boston_LLT.png" class="rounded float-start" alt="Boston Celtics" width="150" height="180"></td>       
+       
+        </tr>
+    </tbody>   
+</table>
+
+<footer class="container-fluid text-center h6 small p-4">© 2023 Daniel_LLT</footer>
+</body>
+</html>

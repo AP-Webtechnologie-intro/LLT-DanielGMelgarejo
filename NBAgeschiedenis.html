@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LangLopendeTaak</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- LEAFLET -->
+  <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+  <link rel="stylesheet" href="css/mapStyle.css">
+  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+  <script defer src="js/mapScript.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example">
+  <header class="LangLopendeTaak">
+    <nav class="navbar navbar-expand-md bg-light">
+      <main class="container-fluid">
+        <a class="navbar-brand" href="Home.html">
+          <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <main class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Clubs Antwerpen">Clubs Antwerpen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Materiaal om te starten">Materiaal om te starten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NBA geschiedenis">NBA geschiedenis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NBA Spelers">NBA Spelers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Antwerpen Pleintjes">Antwerpen Pleintjes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Youtube Links">Youtube Links</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
+                <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
+                <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
+          </form>
+        </main>
+      </main>
+    </nav>
+  </header>
+
+
+    <header></header>
+    <nav></nav>
+    <main>
+        <table class="table table-striped caption-top">
+            <caption>Een reis door de levendige geschiedenis van de NBA</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Datum</th>
+                    <th colspan="2">National Basketball Association</th>
+                </tr>
+                <tr>
+                    <th>Hoofdstuk</th>
+                    <th>Gebeurtenissen</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>6 juni 1946</th>
+                <td>Hoofdstuk I: Het Sprankelende Begin</td>
+                <td>Een magische vonk verlicht de sportwereld als de Basketball Association of America (BAA) wordt opgericht. De geboortedatum van een nieuw tijdperk.</td>
+            </tr>
+            <tbody>
+              <tr>
+                  <th>22 november 1946</th>
+                  <td>Hoofdstuk I: Het Sprankelende Begin</td>
+                  <td>De eerste basketbalwedstrijd betreedt het toneel van de geschiedenis. De Toronto Huskies en de New York Knickerbockers staan tegenover elkaar in het Madison Square Garden. Een symfonie van dribbels en schoten begint te spelen.</td>
+              </tr>
+              <tr>
+                  <th>3 augustus 1949</th>
+                  <td>Hoofdstuk II: De Fusion</td>
+                  <td>Een samensmelting van krachten - de BAA en de National Basketball League (NBL) vormen een alliantie en worden de National Basketball Association (NBA). Een nieuw verhaal ontvouwt zich.</td>
+              </tr>
+              <tr>
+                  <th>22 december 1961</th>
+                  <td>Hoofdstuk II: De Fusion</td>
+                  <td>De legendarische Wilt Chamberlain verbreekt de geluidsbarrière van basketbal met zijn ongelooflijke prestatie van 100 punten in één enkele wedstrijd. Een record dat als een vuurtoren in de geschiedenis staat.</td>
+              </tr>
+              <tr>
+                  <th>26 juni 1979</th>
+                  <td>Hoofdstuk III: Magie en Rivaliteit</td>
+                  <td>De jeugdige Magic Johnson danst als een goochelaar op het hof en leidt de Los Angeles Lakers naar de overwinning in Game 6 van de NBA-finale tegen de Philadelphia 76ers. Een iconisch moment dat de "Showtime"-era inluidt.</td>
+              </tr>
+              <tr>
+                  <th>2 augustus 1984</th>
+                  <td>Hoofdstuk III: Magie en Rivaliteit</td>
+                  <td>De rivaliteit tussen Larry Bird en Magic Johnson bereikt zijn hoogtepunt als ze gezamenlijk het Amerikaanse basketbal domineren. De Celtics en de Lakers strijden om de troon in een van de grootste rivaliteiten in de sportgeschiedenis.</td>
+              </tr>
+              <tr>
+                  <th>12 augustus 1992</th>
+                  <td>Hoofdstuk IV: Air Jordan en de Globale Uitbreiding</td>
+                  <td>De droom van een "Dream Team" wordt werkelijkheid tijdens de Olympische Spelen in Barcelona. Michael Jordan, Larry Bird, en Magic Johnson delen hetzelfde hof en tillen basketbal naar nieuwe hoogten.</td>
+              </tr>
+              <tr>
+                  <th>31 oktober 1995</th>
+                  <td>Hoofdstuk IV: Air Jordan en de Globale Uitbreiding</td>
+                  <td>De Toronto Raptors en de Vancouver Grizzlies treden toe tot de NBA, waarmee de competitie een internationaal gezicht krijgt. De NBA omarmt culturele diversiteit en groeit uit tot een wereldwijd fenomeen.</td>
+              </tr>
+              <tr>
+                  <th>26 juni 2003</th>
+                  <td>Hoofdstuk V: De Moderne Dynastieën</td>
+                  <td>De jonge LeBron James wordt als eerste keuze gekozen in de NBA Draft door de Cleveland Cavaliers. Een nieuw tijdperk van basketbalgrootheid begint.</td>
+              </tr>
+              <tr>
+                <th>26 juni 2003</th>
+                <td>Hoofdstuk V: De Moderne Dynastieën</td>
+                <td>De jonge LeBron James wordt als eerste keuze gekozen in de NBA Draft door de Cleveland Cavaliers. Een nieuw tijdperk van basketbalgrootheid begint.</td>
+              </tr>
+              <tr>
+                <th>7 juni 2015</th>
+                <td>Hoofdstuk V: De Moderne Dynastieën</td>
+                <td>De Golden State Warriors, onder leiding van Stephen Curry, veranderen het spel met hun dynamische schietspel en worden kampioenen. Een revolutie in de basketbalstijl.</td>
+              </tr>
+              <tr>
+                <th>26 juni 2019</th>
+                <td>Hoofdstuk VI: De Toekomst Begint Nu</td>
+                <td>De Toronto Raptors winnen hun eerste NBA-kampioenschap, geleid door Kawhi Leonard. Een bewijs dat elk team, groot of klein, een kans heeft om geschiedenis te schrijven.</td>
+              </tr>
+              <tr>
+                <th>Heden</th>
+                <td>Hoofdstuk VI: De Toekomst Begint Nu</td>
+                <td>De NBA blijft evolueren, gedreven door nieuwe sterren, records en onvoorspelbare wendingen. Elke dribbel, elk schot draagt bij aan de eindeloze saga van de basketbalgeschiedenis.</td>
+              </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>
+  
