@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LangLopendeTaak</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- LEAFLET -->
-  <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
-  <link rel="stylesheet" href="css/mapStyle.css">
-  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
-  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-  <script defer src="js/mapScript.js"></script>
-</head>
-<body class="p-3 m-0 border-0 bd-example">
-  <header class="LangLopendeTaak">
-    <nav class="navbar navbar-expand-md bg-light">
-      <main class="container-fluid">
-        <a class="navbar-brand" href="Home.html">
-          <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <main class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Clubs Antwerpen">Clubs Antwerpen</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Materiaal om te starten">Materiaal om te starten</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="NBA geschiedenis">NBA geschiedenis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="NBA Spelers">NBA Spelers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Antwerpen Pleintjes">Antwerpen Pleintjes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Youtube Links">Youtube Links</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contact </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
-                <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
-                <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangLopendeTaak</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="mapstyle.css">
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="SintJansplein.js" defer></script>  
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <header class="LangLopendeTaak">
+        <nav class="navbar navbar-expand-md bg-light">
+          <main class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <main class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Clubs Antwerpen.html">Clubs Antwerpen</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Materiaal om te starten.html">Materiaal om te starten</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="NBA geschiedenis.html">NBA geschiedenis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="NBA Spelers.html">NBA Spelers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Antwerpen Pleintjes.html">Antwerpen Pleintjes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Youtube Links.html">Youtube Links</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
+                    <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
+                    <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
-            <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
-          </form>
-        </main>
-      </main>
-    </nav>
-  </header>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
+                <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
+              </form>
+            </main>
+          </main>
+        </nav>
+      </header>
+
 
 
     <header></header>
