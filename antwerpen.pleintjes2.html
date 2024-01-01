@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
   <head>
         <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
     <!-- LEAFLET -->
     <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="anonymous">
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
     <link rel="stylesheet" href="mapstyle.css">
     <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
@@ -34,57 +34,55 @@
   <body class="p-3 m-0 border-0 bd-example">
     <header class="LangLopendeTaak">
         <nav class="navbar navbar-expand-md bg-light">
+          <main class="container-fluid">
             <a class="navbar-brand" href="Home.html">
                 <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ClubsAntw.html">Clubs Antwerpen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Materiaal.html">Materiaal om te starten</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="NBAgeschiedenis.html">NBA geschiedenis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="NBAspelers.html">NBA Spelers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="AntwerpenPleintjes.html">Antwerpen Pleintjes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ytlinks..html">Youtube Links</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="contact..html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
-                            <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
-                            <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
-                    <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
-                </form>
-            </div>
+            <main class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Clubs Antwerpen.html">Clubs Antwerpen</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Materiaal om te starten.html">Materiaal om te starten</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="NBA geschiedenis.html">NBA geschiedenis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="NBA Spelers.html">NBA Spelers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Antwerpen Pleintjes.html">Antwerpen Pleintjes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Youtube Links.html">Youtube Links</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
+                    <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
+                    <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
+                <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
+              </form>
+            </main>
+          </main>
         </nav>
-    </header>
-    <footer class="container-fluid text-center h6 small p-4">© 2023 Daniel_LLT</footer>
-</body>
-</html>
-    
+      </header>
+
 
 
       
@@ -233,90 +231,14 @@
                 </p>
             </section>
           </section>
-          <section class="container">
-            <section class="row">
-              <main class="col-md-9 pe-3">
+          <section class="container row">
                 <section id="map" class="row">
                   <article id="SintJansvliet" class="col-12 mb-3"></article>
                 </section>
-              </main>
             </section>
-          </section>
         </section>     
 
 
 
 
-        <section class="accordion-item">
-          <h4 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Basketbalveld 4
-            </button>
-          </h4>
-          <section id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <section class="accordion-body">
-              <strong>Viséstraat, Antwerp 2060, Belgium</strong> 
-              <p>Het basketbalveld aan de Viséstraat in Antwerpen heeft een kortere geschiedenis dan het basketbalveld aan de Sint-Jansvliet. Het veld werd voor het eerst aangelegd in de jaren 1980 en was in gebruik door een lokale basketbalclub. De club was populair bij jongeren en volwassenen en het veld was een belangrijke ontmoetingsplaats voor de lokale bevolking. </p>
-            </section>
-          </section>
-          <section class="container">
-            <section class="row">
-              <main class="col-md-9 pe-3">
-                <section id="map" class="row">
-                  <article id="Viséstraat" class="col-12 mb-3"></article>
-                </section>
-              </main>
-            </section>
-          </section>
-        </section>
-        <section class="accordion-item">
-          <h4 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Basketbalveld 5
-            </button>
-          </h4>
-          <section id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <section class="accordion-body">
-              <strong>Damplein, Antwerp 2060, Belgium</strong>
-              <p>Het basketbalveld op het Damplein in Antwerpen heeft een lange en rijke geschiedenis. Het veld werd voor het eerst aangelegd in de jaren 1930 en was in gebruik door een lokale basketbalclub. De club was populair bij jongeren en volwassenen en het veld was een belangrijke ontmoetingsplaats voor de lokale bevolking. </p> 
-            </section>
-          </section>
-          <section class="container">
-            <section class="row">
-              <main class="col-md-9 pe-3">
-                <section id="map" class="row">
-                  <article id="Damplein" class="col-12 mb-3"></article>
-                </section>
-              </main>
-            </section>
-          </section>
-        </section>       
-        <section class="accordion-item">
-          <h4 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Basketbalveld 6
-            </button>
-          </h4>
-          <section id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <section class="accordion-body">
-              <strong> Lovelingstraat 56, Antwerp 2060, Belgium.</strong> 
-              <p>Het basketbalveld van het Willibrorduscollege in Antwerpen heeft een belangrijke rol gespeeld in de ontwikkeling van basketbal in België. Het veld was een van de eerste basketbalvelden in het land en was de thuisbasis van een van de toonaangevende basketbalclubs van het land.
-
-                Het veld werd aangelegd in de jaren 1920, toen basketbal nog een relatief nieuwe sport in België was. De school zag het potentieel van de sport en wilde haar studenten de kans geven om te trainen en te spelen.</p>
-            </section>
-          </section>
-          <section class="container">
-            <section class="row">
-              <main class="col-md-9 pe-3">
-                <section id="map" class="row">
-                  <article id="Lovelingstraat" class="col-12 mb-3"></article>
-                </section>
-              </main>
-            </section>
-        </section>
-      </section>
-    </section>
-  </section>       
- <footer class="container-fluid text-center h6 small p-4">© 2023 Daniel_LLT</footer>
-</body>
-</html>
+  
