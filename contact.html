@@ -29,7 +29,8 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
       integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-    <script src="SintJansplein.js" defer></script>  
+    <script src="SintJansplein.js" defer></script>
+    <script src="Veemarkt.js" defer></script>  
   </head>
   <body class="p-3 m-0 border-0 bd-example">
     <header class="LangLopendeTaak">
@@ -43,7 +44,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Index.html">Index</a>
+                        <a class="nav-link active" aria-current="page" href="Index.">Index</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ClubsAntw.html">ClubsAntwerpen</a>
@@ -68,6 +69,7 @@
                             Contact
                         </a>
                         <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                             <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
                             <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
                             <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
@@ -81,18 +83,36 @@
             </div>
         </nav>
     </header>
+
+
+
+
+    <section class="container">
+      <section class="row">
+          <section id="map" class="row">
+            <article id="ringlaan" class="col-12 mb-3"></article>
+          </section>      
+        </main>
+      </section>
+    </section> 
+
+    
+
+    
+
+
     <div class="container">
       <div class="row">
         <main class="col-md-9 pe-3">
           <section id="contact" class="row">
             <div class="col-12 mb-3">
               <h2 class="text-uppercase fs-4 fw-bolder pt-3">Hoe kan je ons contacteren?</h2>
-              <p>In deze registratieformulier kan je zoweel de de adm<br>Velden met een * zijn verplicht.</p>
+              <p>In deze registratieformulier kan je zoweel de Administrateu contacteren en de Webdesigner<br>Velden met een * zijn verplicht.</p>
             </div>
 
             <form action="#" method="post" id="adminForm">
               <fieldset class="row g-3 mb-3">
-                <legend class="text-uppercase fs-6 fw-bolder pt-3">>Contact de Administrateur</legend>
+                <legend class="text-uppercase fs-6 fw-bolder pt-3">Contact de Administrateur</legend>
                 <div class="col-md-6">
                   <label for="firstName" class="form-label">Voornaam <span>*</span></label>
                   <input type="text" class="form-control" id="firstName" required="">
@@ -262,7 +282,7 @@
         <aside class="col-md-3 border-start ps-5">
           <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contactgegevens van Administrateur Generaal </h2>
           <p><br>
-            email <a href="S152935@ap.be">S152935@ap.be</a><br>
+            Email <a href="S152935@ap.be">S152935@ap.be</a><br>
             phone +32 466 73 86 18</p>
           <ul class="list-inline socials">
             <li class="list-inline-item">
@@ -289,7 +309,7 @@
       
           <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contactgegevens van Webdesigner</h2>
           <p><br>
-            email <a href="S153045@ap.be">S153045@ap.be</a><br>
+            Email <a href="S153045@ap.be">S153045@ap.be</a><br>
             phone +32 123 / 45 67 89</p>
           <ul class="list-inline socials">
             <li class="list-inline-item">
