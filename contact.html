@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,7 +34,7 @@
   <body class="p-3 m-0 border-0 bd-example">
     <header class="LangLopendeTaak">
         <nav class="navbar navbar-expand-md bg-light">
-            <a class="navbar-brand" href="Home.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,28 +43,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="Index.html">Index</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ClubsAntw.html">Clubs Antwerpen</a>
+                        <a class="nav-link" href="ClubsAntw.html">ClubsAntwerpen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Materiaal.html">Materiaal om te starten</a>
+                        <a class="nav-link" href="Materiaal.html">Materiaal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="NBAgeschiedenis.html">NBA geschiedenis</a>
+                        <a class="nav-link" href="NBAgeschiedenis.html">NBAgeschiedenis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="NBAspelers.html">NBA Spelers</a>
+                        <a class="nav-link" href="NBAspelers.html">NBASpelers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="AntwerpenPleintjes.html">Antwerpen Pleintjes</a>
+                        <a class="nav-link" href="AntwerpenPleintjes.html">AntwerpenPleintjes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ytlinks..html">Youtube Links</a>
+                        <a class="nav-link" href="ytlinks.html">YoutubeLinks</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="contact..html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Contact
                         </a>
                         <ul class="dropdown-menu">
@@ -82,17 +81,59 @@
             </div>
         </nav>
     </header>
-
     <div class="container">
       <div class="row">
         <main class="col-md-9 pe-3">
           <section id="contact" class="row">
             <div class="col-12 mb-3">
-              <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
-              <p>Vul het registratieformulier in.<br>Velden met een * zijn verplicht.</p>
+              <h2 class="text-uppercase fs-4 fw-bolder pt-3">Hoe kan je ons contacteren?</h2>
+              <p>In deze registratieformulier kan je zoweel de de adm<br>Velden met een * zijn verplicht.</p>
             </div>
-            <hr>
-  
+
+            <form action="#" method="post" id="adminForm">
+              <fieldset class="row g-3 mb-3">
+                <legend class="text-uppercase fs-6 fw-bolder pt-3">>Contact de Administrateur</legend>
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">Voornaam <span>*</span></label>
+                  <input type="text" class="form-control" id="firstName" required="">
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Achternaam <span>*</span></label>
+                  <input type="text" class="form-control" id="lastName" required="">
+                </div>
+                <div class="col-6">
+                  <label for="mobile" class="form-label">Mobiel</label>
+                  <input type="tel" class="form-control" id="mobile" placeholder="0412 34 56 78">
+                </div>
+                <div class="col-6">
+                  <label for="birthDate" class="form-label">Geboortedatum</label>
+                  <input type="date" class="form-control" id="birthDate">
+                </div>
+              </fieldset>
+            </form>
+    
+            <form action="#" method="post" id="webdesignerForm">
+              <fieldset class="row g-3 mb-3 mt-3">
+                <legend class="text-uppercase fs-6 fw-bolder pt-3">Contact de Webdesigner</legend>
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">Voornaam <span>*</span></label>
+                  <input type="text" class="form-control" id="firstName" required="">
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Achternaam <span>*</span></label>
+                  <input type="text" class="form-control" id="lastName" required="">
+                </div>
+                <div class="col-6">
+                  <label for="mobile" class="form-label">Mobiel</label>
+                  <input type="tel" class="form-control" id="mobile" placeholder="0412 34 56 78">
+                </div>
+                <div class="col-6">
+                  <label for="birthDate" class="form-label">Geboortedatum</label>
+                  <input type="date" class="form-control" id="birthDate">
+                </div>
+              </fieldset>
+            </form>
+                 
             <form action="#" method="post">
               <fieldset class="row g-3 mb-3">
                 <legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
@@ -147,6 +188,7 @@
                 <div class="col-md-4">
                   <label for="countryCode" class="form-label">kies een land <span>*</span></label>
                   <select id="countryCode" class="form-select">
+                    <option value="" selected=""></option>
                     <option value="BE" selected="">België</option>
                     <option value="DE">Duitsland</option>
                     <option value="FR">Frankrijk</option>
@@ -158,23 +200,49 @@
               </fieldset>
               
               <fieldset class="row g-3 mb-3 mt-3">
-                <legend class="text-uppercase fs-6 fw-bolder pt-3">koffie-achtergrond</legend>
                 <div class="col-6">
-                  <label for="koffie" class="form-label">ik koop</label>
+                  <label for="koffie" class="form-label">Ik speel</label>
                   <select id="koffie" class="form-select">
-                    <option value="bonen" selected="">koffiebonen</option>
-                    <option value="gemalen">gemalen koffie</option>
-                    <option value="oplos">oploskoffie</option>
+                    <option value="" selected=""></option>
+                    <option value="Wel basketball" selected="">Wel basketball</option>
+                    <option value="Soms basketball">Soms basketball</option>
+                    <option value="Niet basketball">Niet basketball</option>
                   </select>
                 </div>
                 <div class="col-6">
-                  <label for="brand" class="form-label">en ben fan van het merk</label>
+                  <label for="brand" class="form-label">Mijn favorite basketballteam is</label>
                   <select id="brand" class="form-select">
-                    <option value="Illy" selected="">Illy</option>
-                    <option value="Lavazza">Lavazza</option>
-                    <option value="Starbucks">Starbucks</option>
-                    <option value="Gran Maestro Italiano">Gran Maestro Italiano</option>
-                    <option value="Celeste d'Oro">Celeste d'Oro</option>
+                    <option value="Atlanta Hawks" selected=""></option>
+                    <option value="Atlanta Hawks" selected="">Atlanta Hawks</option>
+                    <option value="Boston Celtics">Boston Celtics</option>
+                    <option value="Brooklyn Nets">Brooklyn Nets</option>
+                    <option value="Charlotte Hornets">Charlotte Hornets</option>
+                    <option value="Chicago Bulls">Chicago Bulls</option>
+                    <option value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                    <option value="Dallas Mavericks">Dallas Mavericks</option>
+                    <option value="Denver Nuggets">Denver Nuggets</option>
+                    <option value="Detroit Pistons">Detroit Pistons</option>
+                    <option value="Golden State Warriors">Golden State Warriors</option>
+                    <option value="Houston Rockets">Houston Rockets</option>
+                    <option value="Indiana Pacers">Indiana Pacers</option>
+                    <option value="Los Angeles Clippers">Los Angeles Clippers</option>
+                    <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                    <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                    <option value="Miami Heat">Miami Heat</option>
+                    <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                    <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+                    <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+                    <option value="New York Knicks">New York Knicks</option>
+                    <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                    <option value="Orlando Magic">Orlando Magic</option>
+                    <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                    <option value="Phoenix Suns">Phoenix Suns</option>
+                    <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                    <option value="Sacramento Kings">Sacramento Kings</option>
+                    <option value="San Antonio Spurs">San Antonio Spurs</option>
+                    <option value="Toronto Raptors">Toronto Raptors</option>
+                    <option value="Utah Jazz">Utah Jazz</option>
+                    <option value="Washington Wizards">Washington Wizards</option>
                   </select>
                 </div>
                 <div class="col">
@@ -188,13 +256,40 @@
             </form>
   
           </section>
-          <hr>
+          
         </main>
   
         <aside class="col-md-3 border-start ps-5">
-          <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
-          <p>COFFEE shop<br>
-            email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
+          <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contactgegevens van Administrateur Generaal </h2>
+          <p><br>
+            email <a href="S152935@ap.be">S152935@ap.be</a><br>
+            phone +32 466 73 86 18</p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com" target="_blank">
+                <i class="bi bi-youtube koffiebruin fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram koffiebruin fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook koffiebruin fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter koffiebruin fs-3"></i>
+              </a>
+            </li>
+          </ul>
+      
+          <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contactgegevens van Webdesigner</h2>
+          <p><br>
+            email <a href="S153045@ap.be">S153045@ap.be</a><br>
             phone +32 123 / 45 67 89</p>
           <ul class="list-inline socials">
             <li class="list-inline-item">
@@ -220,9 +315,11 @@
           </ul>
         </aside>
   
+
+        
       </div>
-    </div>
-    
+    </div>   
     <footer class="container-fluid text-center h6 small p-4">© 2023 Daniel_LLT</footer>
   </body>
+
 
