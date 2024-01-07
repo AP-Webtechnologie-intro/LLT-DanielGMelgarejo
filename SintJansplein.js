@@ -64,17 +64,32 @@ let Dmarkr = L.marker([51.232249543501666, 4.425098663093153]).addTo(Damplein);
 Dmarkr.bindPopup("<b>Damplein 11, 2060 Antwerpen</b>").openPopup();
 
 
-
-
-let Lovelingstraat = L.map('Lovelingstraat').setView([51.21912596067735, 4.431694698937536], 17);
+var Lovelingstraat = L.map('Lovelingstraat').setView([51.21912596067735, 4.431694698937536], 17);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(Lovelingstraat);
 
-let Wmarkr = L.marker([51.21912596067735, 4.431694698937536]).addTo(Lovelingstraat);
-Wmarkr.bindPopup("<b>Lovelingstraat 56, Antwerp 2060, Belgium<br>").openPopup();
+// bepaal de cirkel rondom Lovelingstraat
+var circleCenter = [51.21912596067735, 4.431694698937536];
+var circleRadius = 20; // Pas dit aan op basis van je vereisten
+
+// teken de cirkel in met de rode kleur
+L.circle(circleCenter, {color: "#e60005", weight: 1, radius: circleRadius}).addTo(Lovelingstraat);
+
+// plaats een marker evenwijdig aan de gegeven coördinaten met als tekst "Lovelingstraat 56, Antwerp 2060, Belgium"
+var parallelMarker = L.marker([51.21912596067735, 4.431694698937536]).addTo(Lovelingstraat);
+parallelMarker.bindPopup("<b>Lovelingstraat 56, Antwerp 2060, Belgium</b>").openPopup();
+  
+
+
+
+
+
+
+
+
 
 
 
