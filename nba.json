@@ -1,3 +1,55 @@
-{
-    "liveServer.settings.port": 5501
-}
+[
+    {
+      "gameId": "1",
+      "status": "Final",
+      "startTime": "2023-01-01T12:00:00Z",
+      "endTime": "2023-01-01T15:30:00Z",
+      "homeTeam": {
+        "teamId": "TeamA",
+        "score": 28,
+        "players": [
+          {"playerId": "PlayerA1", "name": "Player A1", "position": "Quarterback"},
+          {"playerId": "PlayerA2", "name": "Player A2", "position": "Running Back"}
+        ]
+      },
+      "awayTeam": {
+        "teamId": "TeamB",
+        "score": 14,
+        "players": [
+          {"playerId": "PlayerB1", "name": "Player B1", "position": "Quarterback"},
+          {"playerId": "PlayerB2", "name": "Player B2", "position": "Wide Receiver"}
+        ]
+      },
+      "events": [
+        {"eventId": "1", "type": "Touchdown", "team": "TeamA", "player": "PlayerA1", "time": "Q1 10:30"},
+        {"eventId": "2", "type": "FieldGoal", "team": "TeamB", "player": "PlayerB1", "time": "Q1 05:45"},
+        {"eventId": "3", "type": "Interception", "team": "TeamA", "player": "PlayerA2", "time": "Q2 08:15"}
+      ]
+    },
+    {
+      "gameId": "2",
+      "status": "In Progress",
+      "startTime": "2023-01-02T15:30:00Z",
+      "homeTeam": {
+        "teamId": "TeamC",
+        "score": 21,
+        "players": [
+          {"playerId": "PlayerC1", "name": "Player C1", "position": "Quarterback"},
+          {"playerId": "PlayerC2", "name": "Player C2", "position": "Running Back"}
+        ]
+      },
+      "awayTeam": {
+        "teamId": "TeamD",
+        "score": 17,
+        "players": [
+          {"playerId": "PlayerD1", "name": "Player D1", "position": "Quarterback"},
+          {"playerId": "PlayerD2", "name": "Player D2", "position": "Wide Receiver"}
+        ]
+      },
+      "events": [
+        {"eventId": "1", "type": "Touchdown", "team": "TeamC", "player": "PlayerC1", "time": "Q1 12:00"},
+        {"eventId": "2", "type": "FieldGoal", "team": "TeamD", "player": "PlayerD1", "time": "Q1 06:30"}
+      ]
+    }
+  ]
+  
