@@ -1,218 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-        <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LangLopendeTaak</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- eigen geschreven css voor jouw html-bestand -->
-    <link href="./css/style.css" rel="stylesheet">
-    <!-- LEAFLET -->
-    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="anonymous">
-    <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
-    <link rel="stylesheet" href="mapstyle.css">
-    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-    <script src="SintJansplein.js" defer></script>  
-    <script src="nba.js" defer></script>  
-
-  </head>
-  <body class="p-3 m-0 border-0 bd-example">
-    <header class="LangLopendeTaak">
-        <nav class="navbar navbar-expand-md bg-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Overzicht</a>
-                    </li>
-                  
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ClubsAntw.html">ClubsAntwerpen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Materiaal.html">Materiaal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="NBAgeschiedenis.html">NBAgeschiedenis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="NBAspelers.html">NBASpelers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="AntwerpenPleintjes.html">AntwerpenPleintjes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ytlinks.html">YoutubeLinks</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                            <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
-                            <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
-                            <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
-                    <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
-                </form>
-            </div>
-        </nav>
-    </header>
-
-
-  <h1><p><u>Basketbal Vlaanderen</u></p></h1>
-  <table class="table">
-    <thead class="table-dark">
-        <tr>
-            <th scope="col">Clubs in Antwerpen</th>
-            <th scope="col">Geschiedenis</th>
-            <th scope="col">Belangrijke overwinningen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Antwerpen Giants   <img src="Afbeeldingen/Telenet_Giants_logo_123.jpg" class="rounded float-start" alt="Logo Antwerpen Giants" width="150" height="180">
-            </th> 
-            <td>De Antwerp Giants zijn een Belgische professionele basketbalclub uit Antwerpen. 
-                De club werd opgericht in 1960 en speelt sinds 1981 in de Pro Basketball League, de hoogste basketbalcompetitie van België.
-                De Giants zijn een van de meest succesvolle basketbalclubs in België. Ze hebben 11 
-                keer het Belgisch kampioenschap gewonnen, 10 keer de Belgische beker en 1 keer de EuroCup Challenge.</td>  
-            <td>Belgisch kampioenschap (14): 1965, 1966, 1967, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 2023</td> 
-        </tr>        
-    </tbody>
-    <tbody>
-        <tr>
-            <th scope="row">BC Cobras Schoten-Brasschaat   <img src="Afbeeldingen/Cobras_logo_123.jpg" class="rounded float-start" alt="Afbeeldingen/Cobras_logo_123.jpg" width="150" height="170">
-            </th>
-            <td>BC Cobras is een Belgische basketbalclub uit Schoten en Brasschaat. De club werd opgericht in 1964 
-                en speelt sinds 1982 in de tweede klasse van het Belgisch basketbal. In de afgelopen jaren heeft BC Cobras 
-                zich ontwikkeld tot een van de sterkste clubs in de tweede klasse. De club eindigde in 2018, 2019 en 2020 op de tweede plaats. 
-                In 2022 won BC Cobras voor het eerst in de clubgeschiedenis het kampioenschap van de tweede klasse.</td>
-            <td>Belgisch kampioenschap (3): 1988, 1989, 1994</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row">Willibies Antwerpen <img src="Afbeeldingen/Willibies_Antwerpen_123.png" class="rounded float-start" alt="Logo Willibies Antwerpen" width="170" height="180"></th>
-            <td>Willibies Antwerpen is een Belgische basketbalclub uit Willebroek, 
-            een stad in de provincie Antwerpen. De club werd opgericht in 1972 en 
-            speelt sinds 2022 in de tweede klasse van het Belgisch basketbal. In 2022 promoveerde Willibies 
-            Antwerpen voor het eerst in de clubgeschiedenis naar de tweede klasse. 
-            De club eindigde op de vijfde plaats in de reguliere competitie en verloor in de play-offs van BBC Okapi Aalst.</td>
-            <td>Beker van België (1): 1979</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row">Nieuw Bravo <img src="Afbeeldingen/Nieuw_Brabo.jpg" class="rounded float-start" alt="Logo Nieuw Brabo" width="170" height="180"></th>
-          <td>Nieuw Bravo is een Belgische basketbalclub uit Antwerpen. De club werd opgericht in 2023 als een fusie tussen BBC Kangoeroes Basketbal 
-            Antwerpen en BBC Okapi Aalst. De fusie tussen BBC Kangoeroes Basketbal Antwerpen en BBC Okapi Aalst werd a
-            angekondigd in 2022. De twee clubs waren beide actief in de tweede klasse van het Belgisch basketbal. BBC 
-            Kangoeroes Basketbal Antwerpen was een van de meest succesvolle clubs in de tweede klasse, met meerdere titels en bekers op haar naam. 
-            BBC Okapi Aalst was een jongere club, maar had in de afgelopen jaren een sterke ontwikkeling doorgemaakt.</td>
-          <td>Belgisch kampioenschap (1): 1956</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row">Mercurius BBC Berchem <img src="Afbeeldingen/Mercuri_Antwerpen_Logo.jpg" class="rounded float-start" alt="Logo Mercuri" width="170" height="180"></th>
-          <td>Mercurius BBC Berchem is een gerenommeerde basketbalclub uit Berchem, Antwerpen, België. De club werd 
-            opgericht in 1941 en vertegenwoordigt de regio al meer dan tachtig jaar met trots, en heeft zich gevestigd 
-            als een steunpilaar van het Belgische basketbal. De impact van Mercurius BBC Berchem reikt 
-            verder dan het basketbalveld. De club is een steunpilaar van de Berchemse gemeenschap, die een passie 
-            voor de sport koestert en kameraadschap bevordert onder spelers, fans en supporters.
-          </td>
-          <td>Belgisch kampioenschap (2): 1954, 1955 </td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row">Rucon Gembo Koninklijke basketbalclub Borgerhout <img src="Afbeeldingen/Rucon_Logo_Antwerpen.jpg" class="rounded float-start" alt="Logo Rucon" width="170" height="180"></th>
-          <td>Rucon Gembo Koninklijke basketbalclub Borgerhout is een Belgische basketbalclub uit Borgerhout, een district van Antwerpen. 
-            De club werd opgericht in 1932 en is daarmee een van de oudste basketbalclubs van België. De gouden eeuw van de club begon in de 
-            jaren 80. In 1982 promoveerde de club naar de hoogste klasse van het Belgische basketbal, de Eerste klasse. In de jaren 80 en 90 
-            was de club een van de topclubs van België. De club won in deze periode twee keer 
-            het Belgisch kampioenschap, in 1985 en 1990, en twee keer de Beker van België, in 1985 en 1990.
-          </td>
-          <td>
-            Belgisch kampioenschap (2): 1985, 1990 en Beker van België (1): 2022
-          </td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row"> Kangoeroes Basket Mechelen <img src="Afbeeldingen/Kangoeroes_Basket_Mechelen.jpg" class="rounded float-start" alt="Logo Kangoeroes" width="170" height="180"></th>
-          <td>De club speelde in de eerste jaren van haar bestaan in de tweede klasse van het Belgisch basketbal. In 2013 promoveerde de 
-            club naar de hoogste klasse, de Ethias League. Kangoeroes Basket Mechelen is een ambitieuze club die wil meedoen om de prijzen in de hoogste klasse. 
-            De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal.
-          </td>
-          <td>Belgisch kampioenschap (2): 2021, 2022 en Beker van België (2): 2012, 2014</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row"> Basket Groot Zemst <img src="Afbeeldingen/Zemst_Basket.jpg" class="rounded float-start" alt="Logo Groot Zemst" width="170" height="180"></th>
-          <td>Basket Groot Zemst is een Belgische basketbalclub uit Zemst, een gemeente in de provincie Antwerpen. 
-            De club werd opgericht in 2009, als een fusie tussen de clubs Avanti Zemst en Jeppe Eppegem. Basket Groot Zemst is een ambitieuze club die wil meedoen om de prijzen in de 
-            tweede klasse. De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal.
-          </td>
-          <td>Promotie naar de derde klasse (2020) en Promotie naar de tweede klasse (2022) </td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row">Fellows Legal Brokers Ekeren BBC <img src="Afbeeldingen/Fellows_Legal_logo.jpg" class="rounded float-start" alt="Logo Fellows Legal" width="170" height="180"></th>
-          <td>Fellows Legal Brokers Ekeren BBC is een Belgische basketbalclub uit Ekeren, een district van Antwerpen. 
-            De club werd opgericht in 2018.Het logo van Fellows Legal Brokers Ekeren BBC bestaat uit een schild met daarop een afbeelding van een basketbal. 
-            In het midden van het schild staat de t++ekst "Fellows Legal Brokers Ekeren BBC". Het logo is in de kleuren blauw en wit. 
-            Fellows Legal Brokers Ekeren BBC is een ambitieuze club die wil meedoen om de prijzen in de tweede klasse. 
-            De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal.
-          </td>
-          <td>Beker van België (1): 1992 </td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-          <th scope="row">Olicsa Antwerpen <img src="Afbeeldingen/Olicsa_Antwerpen.jpg" class="rounded float-start" alt="Logo Olicsa Antwerpen" width="170" height="180"></th>
-          <td>Olicsa Antwerpen is een Belgische basketbalclub uit Antwerpen. De club werd opgericht in 1962 en is daarmee een 
-            van de oudste basketbalclubs van de stad. Olicsa Antwerpen is een ambitieuze club die wil meedoen om de prijzen in de hoogste klasse. 
-            De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal. </td>
-          <td>Beker van België (1): 1992 </td>
-        </tr>
-    </tbody>
-</table>
-<footer class="container-fluid text-center h6 small p-4">© 2023 Daniel_LLT</footer>
-</body>
+<html lang="nl">
+    <head>
+          <!-- Required meta tags -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LangLopendeTaak</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+      <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+      <!-- JavaScript: Bootstrap Bundle with Popper -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- eigen geschreven css voor jouw html-bestand -->
+      <link href="./css/style.css" rel="stylesheet">
+      <!-- LEAFLET -->
+      <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="anonymous">
+      <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+      <link rel="stylesheet" href="mapstyle.css">
+      <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+      <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+      <script src="SintJansplein.js" defer></script>  
+      <script src="nba.js" defer></script>  
+    </head>
+    <body class="p-3 m-0 border-0 bd-example">
+      <header class="LangLopendeTaak">
+          <nav class="navbar navbar-expand-md bg-light">
+              <a class="navbar-brand" href="index.html">
+                  <img src="Afbeeldingen/daniel_Taak.png" alt="Basket & co" width="130" height="150">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Overzicht</a>
+                      </li>
+                    
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="ClubsAntw.html">ClubsAntwerpen</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="Materiaal.html">Materiaal</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="NBAgeschiedenis.html">NBAgeschiedenis</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="NBAspelers.html">NBASpelers</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="AntwerpenPleintjes.html">AntwerpenPleintjes</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="ytlinks.html">YoutubeLinks</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Contact
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="Facebook">Facebook</a></li>
+                              <li><a class="dropdown-item" href="Instagram">Instagram</a></li>
+                              <li><a class="dropdown-item" href="Gmail">Gmail</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
+                      <button class="btn btn-sm btn-outline-secondary" type="submit">Zoeken</button>
+                  </form>
+              </div>
+          </nav>
+     </header>
+     <h1><u>Basketbal Vlaanderen</u></h1>
+     <table class="table">
+       <thead class="table-dark">
+           <tr>
+               <th scope="col">Clubs in Antwerpen</th>
+               <th scope="col">Geschiedenis</th>
+               <th scope="col">Belangrijke overwinningen</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <th scope="row">Antwerpen Giants   <img src="Afbeeldingen/Telenet_Giants_logo_123.jpg" class="rounded float-start" alt="Logo Antwerpen Giants" width="150" height="180">
+               </th> 
+               <td>De Antwerp Giants zijn een Belgische professionele basketbalclub uit Antwerpen. 
+                   De club werd opgericht in 1960 en speelt sinds 1981 in de Pro Basketball League, de hoogste basketbalcompetitie van België.
+                   De Giants zijn een van de meest succesvolle basketbalclubs in België. Ze hebben 11 
+                   keer het Belgisch kampioenschap gewonnen, 10 keer de Belgische beker en 1 keer de EuroCup Challenge.</td>  
+               <td>Belgisch kampioenschap (14): 1965, 1966, 1967, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 2023</td> 
+           </tr>        
+       </tbody>
+       <tbody>
+           <tr>
+               <th scope="row">BC Cobras Schoten-Brasschaat   <img src="Afbeeldingen/Cobras_logo_123.jpg" class="rounded float-start" alt="Afbeeldingen/Cobras_logo_123.jpg" width="150" height="170">
+               </th>
+               <td>BC Cobras is een Belgische basketbalclub uit Schoten en Brasschaat. De club werd opgericht in 1964 
+                  en speelt sinds 1982 in de tweede klasse van het Belgisch basketbal. In de afgelopen jaren heeft BC Cobras 
+                  zich ontwikkeld tot een van de sterkste clubs in de tweede klasse. De club eindigde in 2018, 2019 en 2020 op de tweede plaats. 
+                  In 2022 won BC Cobras voor het eerst in de clubgeschiedenis het kampioenschap van de tweede klasse.</td>
+               <td>Belgisch kampioenschap (3): 1988, 1989, 1994</td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row">Willibies Antwerpen <img src="Afbeeldingen/Willibies_Antwerpen_123.png" class="rounded float-start" alt="Logo Willibies Antwerpen" width="170" height="180"></th>
+               <td>Willibies Antwerpen is een Belgische basketbalclub uit Willebroek, 
+               een stad in de provincie Antwerpen. De club werd opgericht in 1972 en 
+               speelt sinds 2022 in de tweede klasse van het Belgisch basketbal. In 2022 promoveerde Willibies 
+               Antwerpen voor het eerst in de clubgeschiedenis naar de tweede klasse. 
+               De club eindigde op de vijfde plaats in de reguliere competitie en verloor in de play-offs van BBC Okapi Aalst.</td>
+               <td>Beker van België (1): 1979</td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row">Nieuw Bravo <img src="Afbeeldingen/Nieuw_Brabo.jpg" class="rounded float-start" alt="Logo Nieuw Brabo" width="170" height="180"></th>
+             <td>Nieuw Bravo is een Belgische basketbalclub uit Antwerpen. De club werd opgericht in 2023 als een fusie tussen BBC Kangoeroes Basketbal 
+               Antwerpen en BBC Okapi Aalst. De fusie tussen BBC Kangoeroes Basketbal Antwerpen en BBC Okapi Aalst werd a
+               angekondigd in 2022. De twee clubs waren beide actief in de tweede klasse van het Belgisch basketbal. BBC 
+               Kangoeroes Basketbal Antwerpen was een van de meest succesvolle clubs in de tweede klasse, met meerdere titels en bekers op haar naam. 
+               BBC Okapi Aalst was een jongere club, maar had in de afgelopen jaren een sterke ontwikkeling doorgemaakt.</td>
+             <td>Belgisch kampioenschap (1): 1956</td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row">Mercurius BBC Berchem <img src="Afbeeldingen/Mercuri_Antwerpen_Logo.jpg" class="rounded float-start" alt="Logo Mercuri" width="170" height="180"></th>
+             <td>Mercurius BBC Berchem is een gerenommeerde basketbalclub uit Berchem, Antwerpen, België. De club werd 
+               opgericht in 1941 en vertegenwoordigt de regio al meer dan tachtig jaar met trots, en heeft zich gevestigd 
+               als een steunpilaar van het Belgische basketbal. De impact van Mercurius BBC Berchem reikt 
+               verder dan het basketbalveld. De club is een steunpilaar van de Berchemse gemeenschap, die een passie 
+               voor de sport koestert en kameraadschap bevordert onder spelers, fans en supporters.
+             </td>
+             <td>Belgisch kampioenschap (2): 1954, 1955 </td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row">Rucon Gembo Koninklijke basketbalclub Borgerhout <img src="Afbeeldingen/Rucon_Logo_Antwerpen.jpg" class="rounded float-start" alt="Logo Rucon" width="170" height="180"></th>
+             <td>Rucon Gembo Koninklijke basketbalclub Borgerhout is een Belgische basketbalclub uit Borgerhout, een district van Antwerpen. 
+               De club werd opgericht in 1932 en is daarmee een van de oudste basketbalclubs van België. De gouden eeuw van de club begon in de 
+               jaren 80. In 1982 promoveerde de club naar de hoogste klasse van het Belgische basketbal, de Eerste klasse. In de jaren 80 en 90 
+               was de club een van de topclubs van België. De club won in deze periode twee keer 
+               het Belgisch kampioenschap, in 1985 en 1990, en twee keer de Beker van België, in 1985 en 1990.
+             </td>
+             <td>
+              Belgisch kampioenschap (2): 1985, 1990 en Beker van België (1): 2022
+             </td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row"> Kangoeroes Basket Mechelen <img src="Afbeeldingen/Kangoeroes_Basket_Mechelen.jpg" class="rounded float-start" alt="Logo Kangoeroes" width="170" height="180"></th>
+             <td>De club speelde in de eerste jaren van haar bestaan in de tweede klasse van het Belgisch basketbal. In 2013 promoveerde de 
+               club naar de hoogste klasse, de Ethias League. Kangoeroes Basket Mechelen is een ambitieuze club die wil meedoen om de prijzen in de hoogste klasse. 
+               De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal.
+             </td>
+             <td>Belgisch kampioenschap (2): 2021, 2022 en Beker van België (2): 2012, 2014</td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row"> Basket Groot Zemst <img src="Afbeeldingen/Zemst_Basket.jpg" class="rounded float-start" alt="Logo Groot Zemst" width="170" height="180"></th>
+             <td>Basket Groot Zemst is een Belgische basketbalclub uit Zemst, een gemeente in de provincie Antwerpen. 
+               De club werd opgericht in 2009, als een fusie tussen de clubs Avanti Zemst en Jeppe Eppegem. Basket Groot Zemst is een ambitieuze club die wil meedoen om de prijzen in de 
+               tweede klasse. De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal.
+             </td>
+             <td>Promotie naar de derde klasse (2020) en Promotie naar de tweede klasse (2022) </td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row">Fellows Legal Brokers Ekeren BBC <img src="Afbeeldingen/Fellows_Legal_logo.jpg" class="rounded float-start" alt="Logo Fellows Legal" width="170" height="180"></th>
+             <td>Fellows Legal Brokers Ekeren BBC is een Belgische basketbalclub uit Ekeren, een district van Antwerpen. 
+               De club werd opgericht in 2018.Het logo van Fellows Legal Brokers Ekeren BBC bestaat uit een schild met daarop een afbeelding van een basketbal. 
+               In het midden van het schild staat de t++ekst "Fellows Legal Brokers Ekeren BBC". Het logo is in de kleuren blauw en wit. 
+               Fellows Legal Brokers Ekeren BBC is een ambitieuze club die wil meedoen om de prijzen in de tweede klasse. 
+               De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal.
+             </td>
+             <td>Beker van België (1): 1992 </td>
+           </tr>
+       </tbody>
+       <tbody>
+           <tr>
+             <th scope="row">Olicsa Antwerpen <img src="Afbeeldingen/Olicsa_Antwerpen.jpg" class="rounded float-start" alt="Logo Olicsa Antwerpen" width="170" height="180"></th>
+             <td>Olicsa Antwerpen is een Belgische basketbalclub uit Antwerpen. De club werd opgericht in 1962 en is daarmee een 
+               van de oudste basketbalclubs van de stad. Olicsa Antwerpen is een ambitieuze club die wil meedoen om de prijzen in de hoogste klasse. 
+               De club heeft een sterke jeugdopleiding en wil jong talent klaarstomen voor het eerste elftal. </td>
+             <td>Beker van België (1): 1992 </td>
+           </tr>
+       </tbody>
+     </table>   
+     <footer class="container-fluid text-center h6 small p-4">© 2023 Daniel_LLT</footer>
+    </body>
 </html>
 
